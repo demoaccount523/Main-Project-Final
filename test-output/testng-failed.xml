@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Airbnb Suite]">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Chrome Tests(failed)">
+    <parameter name="headless" value="false"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="tests.ExperienceTests">
+        <methods>
+          <include name="TC06_validateExperienceBookingFlow" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.ExperienceTests -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+</suite> <!-- Failed suite [Airbnb Suite] -->
