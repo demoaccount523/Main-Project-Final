@@ -1,0 +1,30 @@
+
+<suite name="Airbnb Suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <!-- CHROME -->
+    <test name="Chrome Tests">
+         <parameter name="browserName" value="chrome"/>  
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="tests.HomeTests"/>
+            <class name="tests.ExperienceTests"/>
+            <class name="tests.ServiceTests"/>
+        </classes>
+    </test>
+    
+     <!-- <test name="Edge Tests">
+         <parameter name="browserName" value="edge"/> 
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="tests.HomeTests"/>
+            <class name="tests.ExperienceTests"/>
+            <class name="tests.ServiceTests"/>
+        </classes>  
+    </test> -->
+    
+
+    </suite>
