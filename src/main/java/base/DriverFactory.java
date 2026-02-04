@@ -14,10 +14,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.URL;
 import java.time.Duration;
 
-public class DriverFactory {
+public class DriverFactory
+{
     private static final ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
-    public static void initDriver(String browserName) {
+    public static void initDriver(String browserName)
+    {
         // Fallback to config if parameter is null
         if (browserName == null || browserName.trim().isEmpty()) {
             browserName = ConfigReader.getString("browserName");
