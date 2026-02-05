@@ -16,15 +16,15 @@
         </classes>
     </test>
     
-     <!-- <test name="Edge Tests">
-         <parameter name="browserName" value="edge"/> 
+      <test name="Edge Tests">
+         <parameter name="browserName" value="edge"/>
         <parameter name="headless" value="false"/>
         <classes>
             <class name="tests.HomeTests"/>
             <class name="tests.ExperienceTests"/>
             <class name="tests.ServiceTests"/>
-        </classes>  
-    </test> -->
-    
+        </classes>
+    </test>
+
 
     </suite>
