@@ -1,3 +1,5 @@
 .allure/
+target/
 allure-results/
-allure-report/
+.idea/
+*.lock
