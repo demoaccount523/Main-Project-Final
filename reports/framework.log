@@ -93,3 +93,74 @@
 [2026-02-05 09:45:24] [INFO ] [TestNG-tests-2] ServiceTests - Step 2: Enter city and pick suggestion
 [2026-02-05 09:45:26] [INFO ] [TestNG-tests-1] ServiceTests - Step 3: Select dates
 [2026-02-05 09:45:29] [INFO ] [TestNG-tests-2] ServiceTests - Step 3: Select dates
+[2026-02-05 12:39:08] [INFO ] [TestNG-tests-1] HomeTests - Step 1: Verify Home page loads
+[2026-02-05 12:39:18] [INFO ] [TestNG-tests-1] HomeTests - Step 2: Enter city
+[2026-02-05 12:39:19] [INFO ] [TestNG-tests-1] HomeTests - Step 3: Select dates and add guests
+[2026-02-05 12:39:27] [INFO ] [TestNG-tests-1] HomeTests - Step 4: Click Search and handle popups
+[2026-02-05 12:39:30] [INFO ] [TestNG-tests-1] HomeTests - Step 5: Apply price filters and capture listings
+[2026-02-05 12:39:38] [INFO ] [TestNG-tests-1] HomeTests - Home flow completed. Printed 5 listings to console.
+[2026-02-05 12:39:56] [INFO ] [TestNG-tests-1] ExperienceTests - Step 1: Open experiences tab
+[2026-02-05 12:40:07] [INFO ] [TestNG-tests-1] ExperienceTests - Step 2: Enter city
+[2026-02-05 12:40:23] [INFO ] [TestNG-tests-1] ServiceTests - Step 1: Open services tab
+[2026-02-05 12:40:26] [INFO ] [TestNG-tests-1] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 12:40:28] [INFO ] [TestNG-tests-1] ServiceTests - Step 3: Select dates
+[2026-02-05 12:40:33] [INFO ] [TestNG-tests-1] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 12:40:37] [INFO ] [TestNG-tests-1] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 12:41:48] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 12:41:59] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 12:45:34] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 12:45:44] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 12:45:46] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 12:45:50] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 12:45:55] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 13:07:40] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 13:07:51] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 13:07:53] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 13:07:57] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 13:08:01] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 13:08:50] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 13:09:01] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 13:09:03] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 13:09:07] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 13:09:12] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 13:12:17] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 13:12:28] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 13:12:30] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 13:12:34] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 13:12:38] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 13:16:58] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 13:17:09] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 13:17:11] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 13:17:16] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 13:17:20] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 13:20:09] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 13:20:20] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 13:20:21] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 13:20:26] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 13:20:30] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 16:45:47] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 16:45:58] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 16:45:59] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 16:46:04] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 16:46:08] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 16:54:34] [INFO ] [main] ServiceTests - Step 1: Open services tab
+[2026-02-05 16:54:45] [INFO ] [main] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 16:54:47] [INFO ] [main] ServiceTests - Step 3: Select dates
+[2026-02-05 16:54:51] [INFO ] [main] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 16:54:55] [INFO ] [main] ServiceTests - Step 5: Open random service and capture details
+[2026-02-05 16:59:40] [INFO ] [TestNG-tests-1] HomeTests - Step 1: Verify Home page loads
+[2026-02-05 16:59:51] [INFO ] [TestNG-tests-1] HomeTests - Step 2: Enter city
+[2026-02-05 16:59:51] [INFO ] [TestNG-tests-1] HomeTests - Step 3: Select dates and add guests
+[2026-02-05 16:59:58] [INFO ] [TestNG-tests-1] HomeTests - Step 4: Click Search and handle popups
+[2026-02-05 17:00:01] [INFO ] [TestNG-tests-1] HomeTests - Step 5: Apply price filters and capture listings
+[2026-02-05 17:00:10] [INFO ] [TestNG-tests-1] HomeTests - Home flow completed. Printed 5 listings to console.
+[2026-02-05 17:00:24] [INFO ] [TestNG-tests-1] ExperienceTests - Step 1: Open experiences tab
+[2026-02-05 17:00:35] [INFO ] [TestNG-tests-1] ExperienceTests - Step 2: Enter city
+[2026-02-05 17:00:36] [INFO ] [TestNG-tests-1] ExperienceTests - Step 3: Select dates
+[2026-02-05 17:00:41] [INFO ] [TestNG-tests-1] ExperienceTests - Step 4: Set guests and search
+[2026-02-05 17:00:43] [INFO ] [TestNG-tests-1] ExperienceTests - Step 5: Capture details
+[2026-02-05 17:01:17] [INFO ] [TestNG-tests-1] ServiceTests - Step 1: Open services tab
+[2026-02-05 17:01:28] [INFO ] [TestNG-tests-1] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-05 17:01:29] [INFO ] [TestNG-tests-1] ServiceTests - Step 3: Select dates
+[2026-02-05 17:01:34] [INFO ] [TestNG-tests-1] ServiceTests - Step 4: Pick random service type and search
+[2026-02-05 17:01:38] [INFO ] [TestNG-tests-1] ServiceTests - Step 5: Open random service and capture details

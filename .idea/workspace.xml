@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcc76243-c063-42e7-ae21-e24d0435eabf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260204_222055.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_091759.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_091829.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_093756.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_094335.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260204_222125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_091906.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_093839.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/framework.log" beforeDir="false" afterPath="$PROJECT_DIR$/reports/framework.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260204_222226_846.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_092003_166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_093948_603.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_093951_635.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260204_222124_792.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_091905_642.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_093838_556.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_093847_819.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260204_222310_738.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_092049_194.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_094042_899.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_094043_263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +57,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml.executor": "Run",
+    "TestNG.ServiceTests.executor": "Run",
     "git-widget-placeholder": "Tarun",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/2457388/IdeaProjects/Main-Project-Final"
@@ -100,13 +122,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AirbnbPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ServiceTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Maven.AirbnbPOM [allure:serve]" />
+      <item itemvalue="TestNG.ServiceTests" />
       <item itemvalue="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml" />
+        <item itemvalue="TestNG.ServiceTests" />
       </list>
     </recent_temporary>
   </component>
