@@ -1,11 +1,10 @@
 package pages;
 
-import utils.DateSelectionUtils1;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import utils.*;
 
-import utils.ExcelUtils;
-import utils.ScreenshotUtils;
 //import utils.ScreenshotUtils;
-import utils.WaitUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,8 +32,10 @@ public class ServicePage {
     @FindBy(xpath = "//div[text()='Where']/following-sibling::div/input")
     private WebElement whereInput;
 
-    @FindBy(id = "bigsearch-query-location-suggestion-0")
-    private WebElement firstLocationSuggestion;
+//    @FindBy(id = "bigsearch-query-location-suggestion-0")
+//    private WebElement firstLocationSuggestion;
+//    @FindBy(xpath = "//div[@role='option' and contains(., '"+ ConfigReader.getString("serviceCity") +"')]")
+//    private WebElement firstLocationSuggestion;
 
     @FindBy(xpath = "//div[text()='Type of service']")
     private WebElement typeOfService;
@@ -53,8 +54,10 @@ public class ServicePage {
         WebElement w = wait.until(ExpectedConditions.visibilityOf(whereInput));
         w.click();
         w.sendKeys(city);
-        Thread.sleep(3000); 
-        wait.until(ExpectedConditions.elementToBeClickable(firstLocationSuggestion)).click();
+        //Thread.sleep(3000);
+        WebElement firstLocationSuggestion=driver.findElement(By.xpath("//div[@role='option' and contains(., '"+ ConfigReader.getString("serviceCity")+"')]"));
+
+        wait.until(ExpectedConditions.visibilityOf(firstLocationSuggestion)).click();
     }
 
     public void selectDates(String checkinMonth, String checkinDate, String checkoutMonth, String checkoutDate) {
@@ -93,11 +96,14 @@ public class ServicePage {
     }
 
     public void openRandomServiceAndCapture(String testName) throws InterruptedException {
-        Thread.sleep(3000); 
 
         try {
+
+            By listingCard = By.xpath("//div[contains(@class,'g1sqkrme ')]/div");
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(listingCard));
+
             // Check if there are no results before trying to click a random listing
-            List<WebElement> results = driver.findElements(By.xpath("//div[contains(@class,'g1sqkrme ')]/div"));
+            List<WebElement> results = driver.findElements(listingCard);
             
             if (results.isEmpty()) {
                 // If the list is empty, throw an exception to trigger the catch block
@@ -107,6 +113,7 @@ public class ServicePage {
             int randomNum2 = new Random().nextInt(Math.min(10, results.size()));
             Set<String> oldWindows = driver.getWindowHandles();
 
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[contains(text(), 'Services')]")));
             wait.until(ExpectedConditions.elementToBeClickable(results.get(randomNum2))).click();
             wait.until(ExpectedConditions.numberOfWindowsToBe(oldWindows.size() + 1));
 
@@ -145,7 +152,7 @@ public class ServicePage {
             System.out.println("BUG DETECTED: There is nothing in " + selectedServiceType + 
                                " but the key was enabled so I pressed it but nothing is there in the next page so it is a bug.");
             System.out.println("--------------------------------------------------");
-            
+            e.printStackTrace();
             // Capture screenshot of the empty results page
            // ScreenshotUtils.capture(driver, testName + "_EmptyResultsBug");
         }

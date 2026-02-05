@@ -166,7 +166,6 @@ public class HomePage {
                 stableTicks = 0;
             }
             lastCount = count;
-            try { Thread.sleep(250); } catch (InterruptedException ignored) {}
         }
     }
 

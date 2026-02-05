@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dcc76243-c063-42e7-ae21-e24d0435eabf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260204_222055.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_091759.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_091829.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_093756.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_094335.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260204_222125.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_091906.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_093839.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/framework.log" beforeDir="false" afterPath="$PROJECT_DIR$/reports/framework.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260204_222226_846.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_092003_166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_093948_603.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_093951_635.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260204_222124_792.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_091905_642.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_093838_556.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_093847_819.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260204_222310_738.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_092049_194.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_094042_899.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_094043_263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="39EWrhjpHqq3lSq54y60FVDB2Pq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.AirbnbPOM [allure:serve].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml.executor": "Run",
+    "TestNG.ServiceTests.executor": "Run",
+    "git-widget-placeholder": "Tarun",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/2457388/IdeaProjects/Main-Project-Final"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AirbnbPOM [allure:serve]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="allure:serve" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AirbnbPOM" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AirbnbPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ServiceTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.AirbnbPOM [allure:serve]" />
+      <item itemvalue="TestNG.ServiceTests" />
+      <item itemvalue="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml" />
+        <item itemvalue="TestNG.ServiceTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcc76243-c063-42e7-ae21-e24d0435eabf" name="Changes" comment="" />
+      <created>1770261910215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770261910215</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

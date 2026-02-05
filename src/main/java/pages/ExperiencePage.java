@@ -29,8 +29,8 @@ public class ExperiencePage {
     @FindBy(xpath = "//input[@placeholder='Search by city or landmark']")
     private WebElement whereInput;
 
-    @FindBy(xpath = "(//b[@class='b1viecjw atm_cs_14spzga dir dir-ltr'])[1]")
-    private WebElement firstSuggestion;
+//    @FindBy(xpath = "(//b[@class='b1viecjw atm_cs_14spzga dir dir-ltr'])[1]")
+//    private WebElement firstSuggestion;
 
     @FindBy(xpath = "//div[text()='Who']")
     private WebElement who;
@@ -44,7 +44,10 @@ public class ExperiencePage {
 
     public void enterCityAndPickSuggestion(String city) throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(whereInput)).sendKeys(city);
-        Thread.sleep(3000); 
+        //Thread.sleep(3000);
+
+
+        WebElement firstSuggestion= driver.findElement(By.xpath("//div[contains(@role, 'option') and contains(., 'Tokyo')]"));
         wait.until(ExpectedConditions.visibilityOf(firstSuggestion)).click();
     }
 

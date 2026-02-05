@@ -20,12 +20,14 @@ public class TestListener implements ITestListener {
         tlTest.get().info("Test Started on browser: " + browser);
     }
 
-    public void onTestSuccess(ITestResult result) {
+    public void onTestSuccess(ITestResult result)
+    {
         tlTest.get().pass("Test Passed");
     }
 
     public void onTestFailure(ITestResult result) {
         WebDriver driver = DriverFactory.getDriver();
+        tlTest.get().fail("Test Failed");
         
         // Safety check: if DriverFactory fails, attempt to get it from the instance
         if (driver == null) {
