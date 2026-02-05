@@ -54,7 +54,7 @@ public class ServicePage {
         WebElement w = wait.until(ExpectedConditions.visibilityOf(whereInput));
         w.click();
         w.sendKeys(city);
-        //Thread.sleep(3000);
+        
         WebElement firstLocationSuggestion=driver.findElement(By.xpath("//div[@role='option' and contains(., '"+ ConfigReader.getString("serviceCity")+"')]"));
 
         wait.until(ExpectedConditions.visibilityOf(firstLocationSuggestion)).click();

@@ -18,10 +18,11 @@
         <log4j2.version>2.22.1</log4j2.version>
         <webdrivermanager.version>5.7.0</webdrivermanager.version>
         
-         <allure.testng.version>2.32.0</allure.testng.version>
         <surefire.version>3.2.5</surefire.version>
+      <!--    <allure.testng.version>2.32.0</allure.testng.version>
+        
         <allure.maven.plugin.version>2.12.0</allure.maven.plugin.version>
-        <allure.report.version>2.24.0</allure.report.version>
+        <allure.report.version>2.24.0</allure.report.version>-->
         
     </properties>
 
@@ -79,11 +80,11 @@
             <version>${log4j2.version}</version>
         </dependency>
         
-         <dependency>
+        <!--<dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.testng.version}</version>
-        </dependency>
+        </dependency> -->
         
         <dependency>
 	        <groupId>org.slf4j</groupId>
@@ -129,7 +130,7 @@
                 </configuration>
             </plugin>
             
-            <plugin>
+         <!--   <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
                 <version>${allure.maven.plugin.version}</version>
@@ -137,7 +138,7 @@
                     <reportVersion>${allure.report.version}</reportVersion>
                     <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                 </configuration>
-            </plugin>
+            </plugin>  -->
             
         </plugins>
     </build>
