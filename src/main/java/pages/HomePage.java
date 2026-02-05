@@ -196,7 +196,8 @@ public class HomePage {
     }
     
     // Logic for HomePage.java - You can keep this as a helper, but it's now called inside printTop5Listings
-    public void captureStaysToExcel() {
+    public void captureStaysToExcel() 
+    {
         List<WebElement> titles = driver.findElements(titlesBy);
         List<WebElement> prices = driver.findElements(pricesBy);
         int count = Math.min(5, titles.size());

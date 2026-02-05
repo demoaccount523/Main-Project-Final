@@ -1,19 +1,3 @@
-//package base;
-//
-//import utils.ConfigReader;
-//import org.openqa.selenium.WebDriver;
-//
-//public class BaseTest {
-//    public void startDriver(String browserName) 
-//    {
-//        DriverFactory.initDriver(browserName);
-//        DriverFactory.getDriver().get(ConfigReader.getString("baseURL"));
-//    }
-//
-//    public void stopDriver() 
-//    {
-//        DriverFactory.quitDriver();
-
 package base;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.BeforeMethod;
