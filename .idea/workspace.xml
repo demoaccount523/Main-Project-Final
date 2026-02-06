@@ -5,59 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcc76243-c063-42e7-ae21-e24d0435eabf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Edge Tests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Edge Tests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Airbnb Suite/Edge Tests.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/Default test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_123855.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_165932.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_123934.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_124612.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_164623.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_165500.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_170006.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260206_143229.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260206_143302.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/framework.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_170101_044.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_123934_096.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_170005_834.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_124601_394.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_164612_450.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_165459_527.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_170142_719.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/~$TestResults_20260205_170006.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260206_143352_071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260206_143301_714.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260206_143426_794.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260206_143519_255.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listeners/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DateSelectionUtils1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DateSelectionUtils1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ExperienceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ExperienceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.ExperienceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.ExperienceTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,20 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.AirbnbPOM [allure:serve].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ServiceTests.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging Tarun&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/2457388/IdeaProjects/Main-Project-Final&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.AirbnbPOM [allure:serve].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml.executor": "Run",
+    "TestNG.ExperienceTests.executor": "Run",
+    "TestNG.HomeTests.TC01_validateHomeBookingFlow.executor": "Run",
+    "TestNG.ServiceTests.TC11_validateServiceBookingFlow.executor": "Debug",
+    "TestNG.ServiceTests.executor": "Run",
+    "git-widget-placeholder": "Tarun",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/2457388/IdeaProjects/Main-Project-Final"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -157,6 +119,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExperienceTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AirbnbPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ExperienceTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeTests.TC01_validateHomeBookingFlow" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AirbnbPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomeTests" />
+      <option name="METHOD_NAME" value="TC01_validateHomeBookingFlow" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AirbnbPOM" />
       <extension name="coverage">
@@ -176,13 +173,17 @@
     </configuration>
     <list>
       <item itemvalue="Maven.AirbnbPOM [allure:serve]" />
+      <item itemvalue="TestNG.ExperienceTests" />
+      <item itemvalue="TestNG.HomeTests.TC01_validateHomeBookingFlow" />
       <item itemvalue="TestNG.ServiceTests" />
       <item itemvalue="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml" />
+        <item itemvalue="TestNG.ExperienceTests" />
         <item itemvalue="TestNG.ServiceTests" />
+        <item itemvalue="TestNG.HomeTests.TC01_validateHomeBookingFlow" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +196,17 @@
       <updated>1770261910215</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/ServicePage.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
