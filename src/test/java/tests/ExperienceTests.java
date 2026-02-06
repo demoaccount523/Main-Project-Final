@@ -2,6 +2,7 @@ package tests;
 
 import base.BaseTest;
 import base.DriverFactory;
+import org.testng.annotations.*;
 import pages.ExperiencePage;
 import utils.ConfigReader;
 import utils.PopupUtils;
@@ -9,25 +10,25 @@ import utils.WaitUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 public class ExperienceTests extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(ExperienceTests.class);
+    public ExperiencePage experiencePage;
+
+    @Parameters({"browserName", "headless"})
+    @BeforeClass
+    public void setUpExp(@Optional("chrome") String browserFromXml, @Optional("false") String headless){
+        setUp(browserFromXml, headless);
+        log.info("Step 1: Open experiences tab");
+        experiencePage = new ExperiencePage(DriverFactory.getDriver());
+        experiencePage.openExperienceTab();
+    }
     
-    @Parameters({"browserName"})
-    @Test
-    public void TC06_validateExperienceBookingFlow(@Optional("chrome") String browserFromXml) throws Exception {
-//        setUp(browserFromXml);
 
-        try {
-            ExperiencePage experiencePage = new ExperiencePage(DriverFactory.getDriver());
-            String testName = "validateExperienceBooking";
+    @Test(priority=1)
+    public void TC06_validateExperienceBookingFlow() throws Exception {
 
-            log.info("Step 1: Open experiences tab");
-            experiencePage.openExperienceTab();
             PopupUtils.clickGotItIfPresent(DriverFactory.getDriver(), WaitUtils.getPopupWait(DriverFactory.getDriver()));
 
             log.info("Step 2: Enter city");
@@ -49,14 +50,20 @@ public class ExperienceTests extends BaseTest {
             );
             experiencePage.clickSearch();
 
-            log.info("Step 5: Capture details");
-            // Updated method name to match your new refactored page class
-            experiencePage.captureRandomExperience(testName);
-            
-            Assert.assertTrue(true, "Experience flow completed successfully");
 
-        } finally {
-        	tearDown();
-        }
+    }
+
+    @Test(priority=2)
+    public void validateExperienceBookingPage(){
+        String testName = "validateExperiencePage";
+        log.info("Step 5: Capture details");
+        experiencePage.captureRandomExperience(testName);
+        log.info("Experiences Execution completed");
+        Assert.assertTrue(true, "Experience flow completed successfully");
+    }
+
+    @AfterClass
+    public void tearDownExp(){
+        tearDown();
     }
 }

@@ -7,15 +7,15 @@ import utils.ConfigReader;
 
 public class BaseTest {
 
-    @Parameters({"browserName", "headless"})
-    @BeforeMethod // ADDED: This ensures TestNG runs this before every test automatically
+//    @Parameters({"browserName", "headless"})
+     // ADDED: This ensures TestNG runs this before every test automatically
     public void setUp(String browser, String headless) {
         DriverFactory.initDriver(browser, headless);
         // Ensure baseURL matches your config.properties key
         DriverFactory.getDriver().get(ConfigReader.getString("baseURL"));
     }
 
-    @AfterMethod // ADDED: This ensures TestNG cleans up after every test
+     // ADDED: This ensures TestNG cleans up after every test
     public void tearDown() {
         DriverFactory.quitDriver();
     }
