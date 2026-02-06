@@ -1,4 +1,5 @@
 package base;
+
 import org.testng.annotations.Parameters;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -6,17 +7,16 @@ import utils.ConfigReader;
 
 public class BaseTest {
 
-    //@Parameters({"browserName"}) // This matches the parameter name in testng.xml
-    public void setUp(String browser)
-    {
-        // Start driver with the browser passed from XML
-        DriverFactory.initDriver(browser);
+    @Parameters({"browserName", "headless"})
+    @BeforeMethod // ADDED: This ensures TestNG runs this before every test automatically
+    public void setUp(String browser, String headless) {
+        DriverFactory.initDriver(browser, headless);
+        // Ensure baseURL matches your config.properties key
         DriverFactory.getDriver().get(ConfigReader.getString("baseURL"));
     }
 
-    
-    public void tearDown()
-    {
+    @AfterMethod // ADDED: This ensures TestNG cleans up after every test
+    public void tearDown() {
         DriverFactory.quitDriver();
     }
 }

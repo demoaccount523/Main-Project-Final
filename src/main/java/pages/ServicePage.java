@@ -32,11 +32,6 @@ public class ServicePage {
     @FindBy(xpath = "//div[text()='Where']/following-sibling::div/input")
     private WebElement whereInput;
 
-//    @FindBy(id = "bigsearch-query-location-suggestion-0")
-//    private WebElement firstLocationSuggestion;
-//    @FindBy(xpath = "//div[@role='option' and contains(., '"+ ConfigReader.getString("serviceCity") +"')]")
-//    private WebElement firstLocationSuggestion;
-
     @FindBy(xpath = "//div[text()='Type of service']")
     private WebElement typeOfService;
 
@@ -54,7 +49,7 @@ public class ServicePage {
         WebElement w = wait.until(ExpectedConditions.visibilityOf(whereInput));
         w.click();
         w.sendKeys(city);
-        //Thread.sleep(3000);
+
         WebElement firstLocationSuggestion=driver.findElement(By.xpath("//div[@role='option' and contains(., '"+ ConfigReader.getString("serviceCity")+"')]"));
 
         wait.until(ExpectedConditions.visibilityOf(firstLocationSuggestion)).click();
@@ -76,17 +71,17 @@ public class ServicePage {
                 int randomNum = new Random().nextInt(Math.min(10, serv.size()));
                 WebElement choice = serv.get(randomNum);
                 // Store the name of the service (e.g., Photography) for the bug report
-                this.selectedServiceType = choice.getText(); 
+                this.selectedServiceType = choice.getText();
                 choice.click();
             }
-            
+
             else {
                 System.out.println("No Services available in this Location yet.");
                 return false;
             }
-            
+
         } catch (Exception ignored) {
-            
+
         }
         return true;
     }
@@ -99,12 +94,12 @@ public class ServicePage {
 
         try {
 
-            By listingCard = By.xpath("//div[contains(@class,'g1sqkrme ')]/div");
-            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(listingCard));
+            By listingLocator = By.xpath("//div[@data-testid='card-container']");
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(listingLocator));
 
             // Check if there are no results before trying to click a random listing
-            List<WebElement> results = driver.findElements(listingCard);
-            
+            List<WebElement> results = driver.findElements(listingLocator);
+
             if (results.isEmpty()) {
                 // If the list is empty, throw an exception to trigger the catch block
                 throw new NoSuchElementException("No results found");
@@ -113,12 +108,12 @@ public class ServicePage {
             int randomNum2 = new Random().nextInt(Math.min(10, results.size()));
             Set<String> oldWindows = driver.getWindowHandles();
 
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[contains(text(), 'Services')]")));
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//h1[contains(text(), 'Services')]")));
             wait.until(ExpectedConditions.elementToBeClickable(results.get(randomNum2))).click();
             wait.until(ExpectedConditions.numberOfWindowsToBe(oldWindows.size() + 1));
 
             String current = driver.getWindowHandle();
-            driver.close();
+            //driver.close();
             for (String w : driver.getWindowHandles()) {
                 if (!w.equals(current)) {
                     driver.switchTo().window(w);
@@ -128,7 +123,7 @@ public class ServicePage {
             ScreenshotUtils.capture(driver, testName);
             String title = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1"))).getText();
             System.out.println("Service Title: " + title);
-            
+
             String rating = "N/A";
             try {
                 rating = wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -149,7 +144,7 @@ public class ServicePage {
         } catch (Exception e) {
             // BUG REPORTING LOGIC
             System.out.println("--------------------------------------------------");
-            System.out.println("BUG DETECTED: There is nothing in " + selectedServiceType + 
+            System.out.println("BUG DETECTED: There is nothing in " + selectedServiceType +
                                " but the key was enabled so I pressed it but nothing is there in the next page so it is a bug.");
             System.out.println("--------------------------------------------------");
             e.printStackTrace();
@@ -157,7 +152,7 @@ public class ServicePage {
            // ScreenshotUtils.capture(driver, testName + "_EmptyResultsBug");
         }
     }
-    
+
  // Logic for ServicePage.java
     public void logServiceToExcel(String title, String price, String rating) {
         ExcelUtils.writeRow("Services", title, price, rating);

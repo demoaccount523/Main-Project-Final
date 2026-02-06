@@ -8,7 +8,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
@@ -17,73 +16,52 @@ import java.time.Duration;
 public class DriverFactory {
     private static final ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
-    public static void initDriver(String browserName) {
-        // Fallback to config if parameter is null
-        if (browserName == null || browserName.trim().isEmpty()) {
-            browserName = ConfigReader.getString("browserName");
-        }
-
-        String env = ConfigReader.getString("execution_env");
+    public static void initDriver(String browserName, String headlessParam) {
+        String env = ConfigReader.getString("execution_env").trim();
+        boolean isHeadless = Boolean.parseBoolean(headlessParam);
         WebDriver driver = null;
 
         try {
-            if (env != null && env.equalsIgnoreCase("remote")) {
-                // --- REMOTE GRID EXECUTION ---
-                DesiredCapabilities caps = new DesiredCapabilities();
+            if (env.equalsIgnoreCase("remote")) {
+                // --- REMOTE GRID (Always Normal/Visible on Node) ---
                 URL url = new URL(ConfigReader.getString("hubURL"));
 
-                switch (browserName.toLowerCase()) {
-                    case "chrome":
-                        ChromeOptions chOptions = new ChromeOptions();
-                        chOptions.addArguments("--no-sandbox", "--disable-gpu");
-                        driver = new RemoteWebDriver(url, chOptions);
-                        break;
-                    case "edge":
-                        EdgeOptions edOptions = new EdgeOptions();
-                        driver = new RemoteWebDriver(url, edOptions);
-                        break;
-                    case "firefox":
-                        FirefoxOptions ffOptions = new FirefoxOptions();
-                        driver = new RemoteWebDriver(url, ffOptions);
-                        break;
-                    default:
-                        throw new RuntimeException("Browser " + browserName + " not supported on Grid");
+                if (browserName.equalsIgnoreCase("chrome")) {
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+                    driver = new RemoteWebDriver(url, options);
+                } else if (browserName.equalsIgnoreCase("edge")) {
+                    EdgeOptions options = new EdgeOptions();
+                    driver = new RemoteWebDriver(url, options);
+                } else if (browserName.equalsIgnoreCase("firefox")) {
+                    FirefoxOptions options = new FirefoxOptions();
+                    driver = new RemoteWebDriver(url, options);
                 }
             } else {
-                // --- LOCAL EXECUTION ---
-                switch (browserName.toLowerCase()) {
-                    case "chrome":
-                        ChromeOptions chromeOptions = new ChromeOptions();
-                        chromeOptions.addArguments("--remote-allow-origins=*");
-                        chromeOptions.addArguments("--disable-gpu", "--no-sandbox");
-                        // Fixed: Explicitly creating ChromeDriver with options
-                        driver = new ChromeDriver(chromeOptions);
-                        break;
-                    case "edge":
-                        EdgeOptions edgeOptions = new EdgeOptions();
-                        edgeOptions.addArguments("--remote-allow-origins=*");
-                        driver = new EdgeDriver(edgeOptions);
-                        break;
-                    case "firefox":
-                        driver = new FirefoxDriver();
-                        break;
-                    default:
-                        // Default fallback to Chrome if something is wrong
-                        driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
-                        break;
+                // --- LOCAL EXECUTION (Headless Controlled by XML) ---
+                if (browserName.equalsIgnoreCase("chrome")) {
+                    ChromeOptions options = new ChromeOptions();
+                    if (isHeadless) options.addArguments("--headless=new");
+                    options.addArguments("--remote-allow-origins=*");
+                    driver = new ChromeDriver(options);
+                } else if (browserName.equalsIgnoreCase("edge")) {
+                    EdgeOptions options = new EdgeOptions();
+                    if (isHeadless) options.addArguments("--headless=new");
+                    driver = new EdgeDriver(options);
+                } else if (browserName.equalsIgnoreCase("firefox")) {
+                    FirefoxOptions options = new FirefoxOptions();
+                    if (isHeadless) options.addArguments("-headless");
+                    driver = new FirefoxDriver(options);
                 }
             }
         } catch (Exception e) {
-            System.err.println("CRITICAL: Driver initialization failed: " + e.getMessage());
-            e.printStackTrace();
+            System.err.println("Driver initialization failed: " + e.getMessage());
         }
 
         if (driver != null) {
-            driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().window().maximize();
             tlDriver.set(driver);
-        } else {
-            throw new RuntimeException("WebDriver instance is null. Check browser name and executable.");
         }
     }
 

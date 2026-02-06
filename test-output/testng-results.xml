@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-04T22:20:55 IST" name="Airbnb Suite" finished-at="2026-02-04T22:23:17 IST" duration-ms="141755">
+  <suite started-at="2026-02-05T21:20:17 IST" name="Default suite" finished-at="2026-02-05T21:21:17 IST" duration-ms="59926">
     <groups>
     </groups>
-    <test started-at="2026-02-04T22:20:55 IST" name="Chrome Tests" finished-at="2026-02-04T22:23:17 IST" duration-ms="141755">
-      <class name="tests.HomeTests">
-        <test-method signature="TC01_validateHomeBookingFlow(java.lang.String)[pri:0, instance:tests.HomeTests@3dedb4a6]" started-at="2026-02-04T22:20:55 IST" name="TC01_validateHomeBookingFlow" finished-at="2026-02-04T22:21:33 IST" duration-ms="37693" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC01_validateHomeBookingFlow -->
-      </class> <!-- tests.HomeTests -->
+    <test started-at="2026-02-05T21:20:17 IST" name="Default test" finished-at="2026-02-05T21:21:17 IST" duration-ms="59926">
       <class name="tests.ExperienceTests">
-        <test-method signature="TC06_validateExperienceBookingFlow(java.lang.String)[pri:0, instance:tests.ExperienceTests@1654a892]" started-at="2026-02-04T22:21:33 IST" name="TC06_validateExperienceBookingFlow" finished-at="2026-02-04T22:22:36 IST" duration-ms="62650" status="PASS">
+        <test-method signature="TC06_validateExperienceBookingFlow(java.lang.String)[pri:0, instance:tests.ExperienceTests@74bdc168]" started-at="2026-02-05T21:20:17 IST" name="TC06_validateExperienceBookingFlow" finished-at="2026-02-05T21:21:17 IST" duration-ms="59817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,19 +19,6 @@
           </reporter-output>
         </test-method> <!-- TC06_validateExperienceBookingFlow -->
       </class> <!-- tests.ExperienceTests -->
-      <class name="tests.ServiceTests">
-        <test-method signature="TC11_validateServiceBookingFlow(java.lang.String)[pri:0, instance:tests.ServiceTests@2577d6c8]" started-at="2026-02-04T22:22:36 IST" name="TC11_validateServiceBookingFlow" finished-at="2026-02-04T22:23:17 IST" duration-ms="41317" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC11_validateServiceBookingFlow -->
-      </class> <!-- tests.ServiceTests -->
-    </test> <!-- Chrome Tests -->
-  </suite> <!-- Airbnb Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -25,22 +25,18 @@ public class TestListener implements ITestListener {
         tlTest.get().pass("Test Passed");
     }
 
-    public void onTestFailure(ITestResult result) {
+    public void onTestFailure(ITestResult result) 
+    {
         WebDriver driver = DriverFactory.getDriver();
         tlTest.get().fail("Test Failed");
         
         // Safety check: if DriverFactory fails, attempt to get it from the instance
-        if (driver == null) {
+        if (driver == null) 
+        {
             driver = (WebDriver) result.getTestContext().getAttribute("WebDriver");
         }
 
-        //String path = ScreenshotUtils.capture(driver, result.getMethod().getMethodName());
-
-//        tlTest.get().fail(result.getThrowable());
-//        if (path != null) {
-//            tlTest.get().addScreenCaptureFromPath(".." + java.io.File.separator + path);
-        }
-//    }
+    }
 
     public void onTestSkipped(ITestResult result) {
         if (tlTest.get() != null) {

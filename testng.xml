@@ -3,11 +3,12 @@
 
     <listeners>
         <listener class-name="listeners.TestListener"/>
+        <listener class-name="utilities.RetryTransformer"/>
     </listeners>
 
     <!-- CHROME -->
     <test name="Chrome Tests">
-         <parameter name="browserName" value="chrome"/>  
+        <parameter name="browserName" value="chrome"/>
         <parameter name="headless" value="false"/>
         <classes>
             <class name="tests.HomeTests"/>

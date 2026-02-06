@@ -19,7 +19,7 @@ public class HomeTests extends BaseTest {
     @Parameters({"browserName"})
     @Test
     public void TC01_validateHomeBookingFlow(@Optional("chrome") String browserFromXml) {
-    	setUp(browserFromXml);
+//    	setUp(browserFromXml);
 
         try {
             HomePage homePage = new HomePage(DriverFactory.getDriver());
