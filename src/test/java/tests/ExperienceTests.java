@@ -20,7 +20,7 @@ public class ExperienceTests extends BaseTest {
     @Parameters({"browserName"})
     @Test
     public void TC06_validateExperienceBookingFlow(@Optional("chrome") String browserFromXml) throws Exception {
-        setUp(browserFromXml);
+//        setUp(browserFromXml);
 
         try {
             ExperiencePage experiencePage = new ExperiencePage(DriverFactory.getDriver());

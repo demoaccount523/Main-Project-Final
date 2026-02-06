@@ -1,16 +1,21 @@
-[2026-02-05 21:27:49] [INFO ] [TestNG-tests-1] HomeTests - Step 1: Verify Home page loads
-[2026-02-05 21:28:00] [INFO ] [TestNG-tests-1] HomeTests - Step 2: Enter city
-[2026-02-05 21:28:00] [INFO ] [TestNG-tests-1] HomeTests - Step 3: Select dates and add guests
-[2026-02-05 21:28:08] [INFO ] [TestNG-tests-1] HomeTests - Step 4: Click Search and handle popups
-[2026-02-05 21:28:11] [INFO ] [TestNG-tests-1] HomeTests - Step 5: Apply price filters and capture listings
-[2026-02-05 21:28:20] [INFO ] [TestNG-tests-1] HomeTests - Home flow completed. Printed 5 listings to console.
-[2026-02-05 21:28:38] [INFO ] [TestNG-tests-1] ExperienceTests - Step 1: Open experiences tab
-[2026-02-05 21:28:49] [INFO ] [TestNG-tests-1] ExperienceTests - Step 2: Enter city
-[2026-02-05 21:28:50] [INFO ] [TestNG-tests-1] ExperienceTests - Step 3: Select dates
-[2026-02-05 21:28:54] [INFO ] [TestNG-tests-1] ExperienceTests - Step 4: Set guests and search
-[2026-02-05 21:28:57] [INFO ] [TestNG-tests-1] ExperienceTests - Step 5: Capture details
-[2026-02-05 21:29:37] [INFO ] [TestNG-tests-1] ServiceTests - Step 1: Open services tab
-[2026-02-05 21:29:47] [INFO ] [TestNG-tests-1] ServiceTests - Step 2: Enter city and pick suggestion
-[2026-02-05 21:29:49] [INFO ] [TestNG-tests-1] ServiceTests - Step 3: Select dates
-[2026-02-05 21:29:54] [INFO ] [TestNG-tests-1] ServiceTests - Step 4: Pick random service type and search
-[2026-02-05 21:29:58] [INFO ] [TestNG-tests-1] ServiceTests - Step 5: Open random service and capture details
+[2026-02-06 14:32:37] [INFO ] [TestNG-tests-1] HomeTests - Step 1: Verify Home page loads
+[2026-02-06 14:32:48] [INFO ] [TestNG-tests-1] HomeTests - Step 2: Enter city
+[2026-02-06 14:32:49] [INFO ] [TestNG-tests-1] HomeTests - Step 3: Select dates and add guests
+[2026-02-06 14:32:54] [INFO ] [TestNG-tests-1] HomeTests - Step 4: Click Search and handle popups
+[2026-02-06 14:32:58] [INFO ] [TestNG-tests-1] HomeTests - Step 5: Apply price filters and capture listings
+[2026-02-06 14:33:03] [INFO ] [TestNG-tests-1] HomeTests - Home flow completed. Printed 5 listings to console.
+[2026-02-06 14:33:18] [INFO ] [TestNG-tests-1] ExperienceTests - Step 1: Open experiences tab
+[2026-02-06 14:33:29] [INFO ] [TestNG-tests-1] ExperienceTests - Step 2: Enter city
+[2026-02-06 14:33:30] [INFO ] [TestNG-tests-1] ExperienceTests - Step 3: Select dates
+[2026-02-06 14:33:34] [INFO ] [TestNG-tests-1] ExperienceTests - Step 4: Set guests and search
+[2026-02-06 14:33:35] [INFO ] [TestNG-tests-1] ExperienceTests - Step 5: Capture details
+[2026-02-06 14:34:06] [INFO ] [TestNG-tests-1] ServiceTests - Step 1: Open services tab
+[2026-02-06 14:34:16] [INFO ] [TestNG-tests-1] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-06 14:34:18] [INFO ] [TestNG-tests-1] ServiceTests - Step 3: Select dates
+[2026-02-06 14:34:21] [INFO ] [TestNG-tests-1] ServiceTests - Step 4: Pick random service type and search
+[2026-02-06 14:34:22] [INFO ] [TestNG-tests-1] ServiceTests - Step 5: Open random service and capture details
+[2026-02-06 14:35:00] [INFO ] [TestNG-tests-1] ServiceTests - Step 1: Open services tab
+[2026-02-06 14:35:10] [INFO ] [TestNG-tests-1] ServiceTests - Step 2: Enter city and pick suggestion
+[2026-02-06 14:35:11] [INFO ] [TestNG-tests-1] ServiceTests - Step 3: Select dates
+[2026-02-06 14:35:14] [INFO ] [TestNG-tests-1] ServiceTests - Step 4: Pick random service type and search
+[2026-02-06 14:35:15] [INFO ] [TestNG-tests-1] ServiceTests - Step 5: Open random service and capture details

@@ -20,7 +20,7 @@ public class ServiceTests extends BaseTest {
     @Test
     public void TC11_validateServiceBookingFlow(@Optional("chrome") String browserFromXml) throws Exception 
     {
-    	setUp(browserFromXml);
+//    	setUp(browserFromXml);
 
         try {
             ServicePage servicePage = new ServicePage(DriverFactory.getDriver());
@@ -50,13 +50,14 @@ public class ServiceTests extends BaseTest {
             }
             
             
-            Thread.sleep(3000); 
+            //Thread.sleep(3000);
             servicePage.clickSearch();
 
             log.info("Step 5: Open random service and capture details");
             servicePage.openRandomServiceAndCapture(testName);
             
             Assert.assertTrue(true, "Service flow completed successfully");
+            Assert.fail();
 
         } finally {
             tearDown();

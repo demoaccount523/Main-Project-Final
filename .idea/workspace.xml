@@ -5,37 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcc76243-c063-42e7-ae21-e24d0435eabf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Edge Tests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Edge Tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Airbnb Suite/Edge Tests.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/Default test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260204_222055.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_091759.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_091829.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_093756.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_094335.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260204_222125.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_091906.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_093839.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/framework.log" beforeDir="false" afterPath="$PROJECT_DIR$/reports/framework.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260204_222226_846.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_092003_166.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_093948_603.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_093951_635.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260204_222124_792.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_091905_642.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_093838_556.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_093847_819.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260204_222310_738.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_092049_194.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_094042_899.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_094043_263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_123855.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_20260205_165932.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_123934.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_124612.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_164623.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_165500.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TestResults_20260205_170006.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/framework.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateExperienceBooking_20260205_170101_044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_123934_096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateHomeBookingFlow_20260205_170005_834.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_124601_394.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_164612_450.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_165459_527.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/screenshots/validateServiceBookingFlow_20260205_170142_719.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/~$TestResults_20260205_170006.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listeners/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ExperiencePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ServicePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DateSelectionUtils1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DateSelectionUtils1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ExperienceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ExperienceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Airbnb Suite/Chrome Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.ExperienceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-tests.ExperienceTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,20 +84,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.AirbnbPOM [allure:serve].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml.executor": "Run",
-    "TestNG.ServiceTests.executor": "Run",
-    "git-widget-placeholder": "Tarun",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/2457388/IdeaProjects/Main-Project-Final"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.AirbnbPOM [allure:serve].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging Tarun&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2457388/IdeaProjects/Main-Project-Final&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.C:/Users/2457388/IdeaProjects/Main-Project-Final/testng.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
