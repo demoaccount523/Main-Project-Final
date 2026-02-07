@@ -19,7 +19,7 @@ public class ExcelUtils {
         try {
             // Use System.getProperty("user.dir") to get the absolute project root
             String projectPath = System.getProperty("user.dir");
-            File reportsDir = new File(projectPath + File.separator + "reports");
+            File reportsDir = new File(projectPath + File.separator + "reports/ExcelOutputs");
 
             // Ensure the directory exists physically
             if (!reportsDir.exists()) {

@@ -27,7 +27,7 @@ public class TestListener implements ITestListener {
         String reportName = "Test-Report-" + timeStamp + ".html";
 
         // 2. Define the report location with the dynamic name
-        sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/" + reportName);
+        sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/ExtentReports/" + reportName);
 
         // Video Step: Configure UI [01:08:40]
         sparkReporter.config().setDocumentTitle("Automation Report");
