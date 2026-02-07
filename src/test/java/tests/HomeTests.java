@@ -16,10 +16,10 @@ import org.testng.annotations.Test;
 public class HomeTests extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(HomeTests.class);
-    @Parameters({"browserName"})
-    @Test
-    public void TC01_validateHomeBookingFlow(@Optional("chrome") String browserFromXml) {
-//    	setUp(browserFromXml);
+    @Parameters({"browserName", "headless"})
+    @Test(priority = 0)
+    public void TC01_validateHomeBookingFlow(@Optional("chrome") String browserFromXml , @Optional("false") String headless) {
+    	setUp(browserFromXml,headless);
 
         try {
             HomePage homePage = new HomePage(DriverFactory.getDriver());

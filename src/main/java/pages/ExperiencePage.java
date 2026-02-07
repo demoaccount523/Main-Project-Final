@@ -13,12 +13,14 @@ import org.openqa.selenium.support.ui.*;
 
 import java.util.*;
 
-public class ExperiencePage {
+public class ExperiencePage 
+{
 
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    public ExperiencePage(WebDriver driver) {
+    public ExperiencePage(WebDriver driver) 
+    {
         this.driver = driver;
         this.wait = WaitUtils.getWait(driver);
         PageFactory.initElements(driver, this);
@@ -36,22 +38,26 @@ public class ExperiencePage {
     @FindBy(xpath = "//div[text()='Search']")
     private WebElement search;
 
-    public void openExperienceTab() {
+    public void openExperienceTab() 
+    {
         wait.until(ExpectedConditions.elementToBeClickable(experiencesTab)).click();
     }
 
-    public void enterCityAndPickSuggestion(String city) throws InterruptedException {
+    public void enterCityAndPickSuggestion(String city) throws InterruptedException 
+    {
         wait.until(ExpectedConditions.visibilityOf(whereInput)).sendKeys(city);
         WebElement firstSuggestion= driver.findElement(By.xpath("//div[contains(@role, 'option') and contains(., '"+ConfigReader.getString("experienceCity")+"')]"));
         wait.until(ExpectedConditions.visibilityOf(firstSuggestion)).click();
     }
 
-    public void selectDates(String checkinMonth, String checkinDate, String checkoutMonth, String checkoutDate) {
+    public void selectDates(String checkinMonth, String checkinDate, String checkoutMonth, String checkoutDate) 
+    {
         DateSelectionUtils1.selectDate(driver, wait, checkinMonth, checkinDate);
         DateSelectionUtils1.selectDate(driver, wait, checkoutMonth, checkoutDate);
     }
 
-    public void setStepperValue(String stepperType, int targetValue) {
+    public void setStepperValue(String stepperType, int targetValue) 
+    {
         WebElement valueElement = driver.findElement(By.xpath("//span[@data-testid='stepper-" + stepperType + "-value']"));
         WebElement plusButton = driver.findElement(By.xpath("//button[@data-testid='stepper-" + stepperType + "-increase-button']"));
         WebElement minusButton = driver.findElement(By.xpath("//button[@data-testid='stepper-" + stepperType + "-decrease-button']"));
@@ -59,35 +65,45 @@ public class ExperiencePage {
         int currentValue = Integer.parseInt(valueElement.getText());
         int diff = targetValue - currentValue;
 
-        if (diff > 0) {
+        if (diff > 0) 
+        {
             for (int i = 0; i < diff; i++) plusButton.click();
-        } else if (diff < 0) {
+        } 
+        else if (diff < 0) 
+        {
             for (int i = 0; i < Math.abs(diff); i++) minusButton.click();
         }
     }
 
-    public void openWhoAndSetGuests(int adults, int children, int infants) {
+    public void openWhoAndSetGuests(int adults, int children, int infants) 
+    {
         wait.until(ExpectedConditions.elementToBeClickable(who)).click();
         setStepperValue("adults", adults);
         setStepperValue("children", children);
         setStepperValue("infants", infants);
     }
 
-    public void clickSearch() {
+    public void clickSearch() 
+    {
         wait.until(ExpectedConditions.elementToBeClickable(search)).click();
     }
 
-    public boolean isNoExactMatchesPresent() {
-        try {
+    public boolean isNoExactMatchesPresent() 
+    {
+        try 
+        {
             WebElement noMatches = wait.until(ExpectedConditions.presenceOfElementLocated(
                     By.xpath("//*[contains(text(),'No exact matches')]")));
             return noMatches.isDisplayed();
-        } catch (Exception e) {
+        } 
+        catch (Exception e) 
+        {
             return false;
         }
     }
 
-    public void captureRandomExperience(String testName) {
+    public void captureRandomExperience(String testName) 
+    {
         
         By GFF = By.xpath("(//div[contains(@class,'c14whb16')])[1]//a/following-sibling::div/div[2]/div[1]");
         By LCH = By.xpath("(//div[contains(@class,'c14whb16')])[2]//a/following-sibling::div/div[2]/div[1]");
@@ -95,11 +111,16 @@ public class ExperiencePage {
 
         By activeBlock = null;
 
-        if (!driver.findElements(GFF).isEmpty() && driver.findElement(GFF).isDisplayed()) {
+        if (!driver.findElements(GFF).isEmpty() && driver.findElement(GFF).isDisplayed()) 
+        {
             activeBlock = GFF;
-        } else if (!driver.findElements(LCH).isEmpty() && driver.findElement(LCH).isDisplayed()) {
+        } 
+        else if (!driver.findElements(LCH).isEmpty() && driver.findElement(LCH).isDisplayed()) 
+        {
             activeBlock = LCH;
-        } else if (!driver.findElements(Explore).isEmpty() && driver.findElement(Explore).isDisplayed()) {
+        }
+        else if (!driver.findElements(Explore).isEmpty() && driver.findElement(Explore).isDisplayed()) 
+        {
             activeBlock = Explore;
         }
 
@@ -107,7 +128,8 @@ public class ExperiencePage {
 
         int i = 1;
         HashMap<Integer, String> map = new HashMap<>();
-        for (WebElement t : titles) {
+        for (WebElement t : titles) 
+        {
             map.put(i++, t.getText());
         }
 
@@ -130,10 +152,13 @@ public class ExperiencePage {
         
         // Location Xpath (Using a more stable version of your xpath)
         String location = "Not Found";
-        try {
+        try
+        {
             WebElement locele = driver.findElement(By.xpath("//div[@data-section-id='LOCATION_DEFAULT']//h2/following-sibling::div/div"));
             location = locele.getText();
-        } catch (Exception e) {
+        } 
+        catch (Exception e) 
+        {
             // Fallback to your specific class xpath if the above fails
             location = driver.findElement(By.xpath("(//div[contains(@class,'toa59ve')])[2]")).getText();
         }
@@ -143,7 +168,8 @@ public class ExperiencePage {
         System.out.println("Location: " + location);
 
         List<WebElement> tasks = driver.findElements(By.xpath("//div/button[contains(@class,'l1ovpqvx')]/div/div[2]/h3"));
-        for (int tIndex = 0; tIndex < tasks.size(); tIndex++) {
+        for (int tIndex = 0; tIndex < tasks.size(); tIndex++)
+        {
             System.out.println("Task " + (tIndex + 1) + ": " + tasks.get(tIndex).getText());
         }
         
@@ -166,7 +192,8 @@ public class ExperiencePage {
         logExperienceToExcel(heading, finalPrice, host, location);
     }
     
-    public void logExperienceToExcel(String name, String price, String host, String location) {
+    public void logExperienceToExcel(String name, String price, String host, String location) 
+    {
         ExcelUtils.writeRow("Experiences", name, price, host, location);
     }
 }

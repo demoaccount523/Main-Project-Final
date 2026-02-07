@@ -2,6 +2,8 @@ package tests;
 
 import base.BaseTest;
 import base.DriverFactory;
+import org.testng.annotations.*;
+import pages.ExperiencePage;
 import pages.ServicePage;
 import utils.ConfigReader;
 import utils.PopupUtils;
@@ -9,24 +11,25 @@ import utils.WaitUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 public class ServiceTests extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(ServiceTests.class);
-    @Parameters({"browserName"})
-    @Test
-    public void TC11_validateServiceBookingFlow(@Optional("chrome") String browserFromXml) throws Exception 
+    public ServicePage servicePage;
+
+    @Parameters({"browserName", "headless"})
+    @BeforeClass
+    public void setUpExp(@Optional("chrome") String browserFromXml,@Optional("false") String headless){
+        setUp(browserFromXml, headless);
+        servicePage = new ServicePage(DriverFactory.getDriver());
+        log.info("Step 1: Open services tab");
+
+    }
+
+    @Test(priority=3)
+    public void TC11_validateServiceBookingFlow() throws Exception
     {
-//    	setUp(browserFromXml);
 
-        try {
-            ServicePage servicePage = new ServicePage(DriverFactory.getDriver());
-            String testName = "validateServiceBookingFlow";
-
-            log.info("Step 1: Open services tab");
             PopupUtils.clickGotItIfPresent(DriverFactory.getDriver(), WaitUtils.getPopupWait(DriverFactory.getDriver()));
             servicePage.openServicesTab();
             
@@ -48,19 +51,24 @@ public class ServiceTests extends BaseTest {
             if(!available) {
             	return;
             }
-            
-            
+
             //Thread.sleep(3000);
             servicePage.clickSearch();
 
-            log.info("Step 5: Open random service and capture details");
-            servicePage.openRandomServiceAndCapture(testName);
-            
-            Assert.assertTrue(true, "Service flow completed successfully");
-            Assert.fail();
 
-        } finally {
-            tearDown();
-        }
+    }
+
+    @Test(priority=4)
+    public void validateServiceBookingPage() throws InterruptedException {
+        String testName = "validateServiceBookingPage";
+        log.info("Step 5: Open random service and capture details");
+        servicePage.openRandomServiceAndCapture(testName);
+        log.info("Services Execution Completed");
+        Assert.assertTrue(true, "Service flow completed successfully");
+    }
+
+    @AfterClass
+    public void tearDownExp(){
+        tearDown();
     }
 }

@@ -15,12 +15,14 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-public class ServicePage {
+public class ServicePage 
+{
 
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    public ServicePage(WebDriver driver) {
+    public ServicePage(WebDriver driver) 
+    {
         this.driver = driver;
         this.wait = WaitUtils.getWait(driver);
         PageFactory.initElements(driver, this);
@@ -41,11 +43,13 @@ public class ServicePage {
     // Element representing the selected service type text to use in the catch block
     private String selectedServiceType = "Unknown Service";
 
-    public void openServicesTab() {
+    public void openServicesTab() 
+    {
         wait.until(ExpectedConditions.elementToBeClickable(servicesTab)).click();
     }
 
-    public void enterCityAndPickFirstSuggestion(String city) throws InterruptedException {
+    public void enterCityAndPickFirstSuggestion(String city) throws InterruptedException 
+    {
         WebElement w = wait.until(ExpectedConditions.visibilityOf(whereInput));
         w.click();
         w.sendKeys(city);
@@ -55,7 +59,8 @@ public class ServicePage {
         wait.until(ExpectedConditions.visibilityOf(firstLocationSuggestion)).click();
     }
 
-    public void selectDates(String checkinMonth, String checkinDate, String checkoutMonth, String checkoutDate) {
+    public void selectDates(String checkinMonth, String checkinDate, String checkoutMonth, String checkoutDate) 
+    {
         DateSelectionUtils1.selectDate(driver, wait, checkinMonth, checkinDate);
         DateSelectionUtils1.selectDate(driver, wait, checkoutMonth, checkoutDate);
     }
@@ -147,6 +152,7 @@ public class ServicePage {
             System.out.println("BUG DETECTED: There is nothing in " + selectedServiceType +
                                " but the key was enabled so I pressed it but nothing is there in the next page so it is a bug.");
             System.out.println("--------------------------------------------------");
+            Assert.fail();
             e.printStackTrace();
             // Capture screenshot of the empty results page
            // ScreenshotUtils.capture(driver, testName + "_EmptyResultsBug");
