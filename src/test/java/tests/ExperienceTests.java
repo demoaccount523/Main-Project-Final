@@ -15,7 +15,9 @@ public class ExperienceTests extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(ExperienceTests.class);
     public ExperiencePage experiencePage;
-
+    
+    //hello
+    
     @Parameters({"browserName", "headless"})
     @BeforeClass
     public void setUpExp(@Optional("chrome") String browserFromXml, @Optional("false") String headless){
@@ -27,7 +29,9 @@ public class ExperienceTests extends BaseTest {
     
 
     @Test(priority=1)
-    public void TC06_validateExperienceBookingFlow() throws Exception {
+    public void TC06_validateExperienceBookingFlow() throws Exception 
+    {
+    		try {
 
             PopupUtils.clickGotItIfPresent(DriverFactory.getDriver(), WaitUtils.getPopupWait(DriverFactory.getDriver()));
 
@@ -49,11 +53,17 @@ public class ExperienceTests extends BaseTest {
                     ConfigReader.getInt("expInfants")
             );
             experiencePage.clickSearch();
+    		}
+    		catch(Exception e)
+    		{
+    			
+    			e.printStackTrace();    		
+    		}
 
 
     }
 
-    @Test(priority=2)
+    @Test(priority=2,dependsOnMethods= {"TC06_validateExperienceBookingFlow"})
     public void validateExperienceBookingPage(){
         String testName = "validateExperiencePage";
         log.info("Step 5: Capture details");

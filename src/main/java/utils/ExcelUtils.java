@@ -26,7 +26,7 @@ public class ExcelUtils {
                 reportsDir.mkdirs();
             }
 
-            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy.MM.dd_HH.mm.ss"));
             filePath = reportsDir.getAbsolutePath() + File.separator + "TestResults_" + timestamp + ".xlsx";
 
             System.out.println("Excel Path: " + filePath);
