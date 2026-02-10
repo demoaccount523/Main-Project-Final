@@ -52,7 +52,7 @@ public class ServiceTests extends BaseTest {
             	return;
             }
 
-            //Thread.sleep(3000);
+            
             servicePage.clickSearch();
 
 
