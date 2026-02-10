@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-09T23:51:06 IST" name="Airbnb Suite" finished-at="2026-02-09T23:53:16 IST" duration-ms="129588">
+  <suite started-at="2026-02-10T10:38:26 IST" name="Airbnb Suite" finished-at="2026-02-10T10:40:55 IST" duration-ms="148986">
     <groups>
     </groups>
-    <test started-at="2026-02-09T23:51:06 IST" name="Chrome Tests" finished-at="2026-02-09T23:53:16 IST" duration-ms="129588">
+    <test started-at="2026-02-10T10:38:26 IST" name="Chrome Tests" finished-at="2026-02-10T10:40:55 IST" duration-ms="148986">
       <class name="tests.HomeTests">
-        <test-method signature="TC01_validateHomeBookingFlow(java.lang.String,java.lang.String)[pri:0, instance:tests.HomeTests@4612b856]" started-at="2026-02-09T23:51:06 IST" name="TC01_validateHomeBookingFlow" finished-at="2026-02-09T23:51:45 IST" duration-ms="38357" status="PASS">
+        <test-method signature="TC01_validateHomeBookingFlow(java.lang.String,java.lang.String)[pri:0, instance:tests.HomeTests@4612b856]" started-at="2026-02-10T10:38:26 IST" name="TC01_validateHomeBookingFlow" finished-at="2026-02-10T10:39:13 IST" duration-ms="47290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
         </test-method> <!-- TC01_validateHomeBookingFlow -->
       </class> <!-- tests.HomeTests -->
       <class name="tests.ExperienceTests">
-        <test-method is-config="true" signature="setUpExp(java.lang.String,java.lang.String)[pri:0, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-09T23:51:45 IST" name="setUpExp" finished-at="2026-02-09T23:51:51 IST" duration-ms="5746" status="PASS">
+        <test-method is-config="true" signature="setUpExp(java.lang.String,java.lang.String)[pri:0, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-10T10:39:13 IST" name="setUpExp" finished-at="2026-02-10T10:39:21 IST" duration-ms="7323" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,21 +41,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpExp -->
-        <test-method signature="TC06_validateExperienceBookingFlow()[pri:1, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-09T23:51:51 IST" name="TC06_validateExperienceBookingFlow" finished-at="2026-02-09T23:52:06 IST" duration-ms="15653" status="PASS">
+        <test-method signature="TC06_validateExperienceBookingFlow()[pri:1, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-10T10:39:21 IST" name="TC06_validateExperienceBookingFlow" finished-at="2026-02-10T10:39:37 IST" duration-ms="16691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC06_validateExperienceBookingFlow -->
-        <test-method signature="validateExperienceBookingPage()[pri:2, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-09T23:52:06 IST" name="validateExperienceBookingPage" finished-at="2026-02-09T23:52:24 IST" depends-on-methods="tests.ExperienceTests.TC06_validateExperienceBookingFlow" duration-ms="17665" status="PASS">
+        <test-method signature="validateExperienceBookingPage()[pri:2, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-10T10:39:37 IST" name="validateExperienceBookingPage" finished-at="2026-02-10T10:39:56 IST" depends-on-methods="tests.ExperienceTests.TC06_validateExperienceBookingFlow" duration-ms="18344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateExperienceBookingPage -->
-        <test-method is-config="true" signature="tearDownExp()[pri:0, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-09T23:52:24 IST" name="tearDownExp" finished-at="2026-02-09T23:52:32 IST" duration-ms="7786" status="PASS">
+        <test-method is-config="true" signature="tearDownExp()[pri:0, instance:tests.ExperienceTests@75f95314]" started-at="2026-02-10T10:39:56 IST" name="tearDownExp" finished-at="2026-02-10T10:40:06 IST" duration-ms="10607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownExp -->
       </class> <!-- tests.ExperienceTests -->
       <class name="tests.ServiceTests">
-        <test-method is-config="true" signature="setUpExp(java.lang.String,java.lang.String)[pri:0, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-09T23:52:32 IST" name="setUpExp" finished-at="2026-02-09T23:52:37 IST" duration-ms="5726" status="PASS">
+        <test-method is-config="true" signature="setUpExp(java.lang.String,java.lang.String)[pri:0, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-10T10:40:06 IST" name="setUpExp" finished-at="2026-02-10T10:40:14 IST" duration-ms="7294" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,15 +71,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpExp -->
-        <test-method signature="TC11_validateServiceBookingFlow()[pri:3, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-09T23:52:37 IST" name="TC11_validateServiceBookingFlow" finished-at="2026-02-09T23:52:53 IST" duration-ms="15922" status="PASS">
+        <test-method signature="TC11_validateServiceBookingFlow()[pri:3, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-10T10:40:14 IST" name="TC11_validateServiceBookingFlow" finished-at="2026-02-10T10:40:31 IST" duration-ms="17359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC11_validateServiceBookingFlow -->
-        <test-method signature="validateServiceBookingPage()[pri:4, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-09T23:52:53 IST" name="validateServiceBookingPage" finished-at="2026-02-09T23:53:08 IST" depends-on-methods="tests.ServiceTests.TC11_validateServiceBookingFlow" duration-ms="14484" status="PASS">
+        <test-method signature="validateServiceBookingPage()[pri:4, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-10T10:40:31 IST" name="validateServiceBookingPage" finished-at="2026-02-10T10:40:45 IST" depends-on-methods="tests.ServiceTests.TC11_validateServiceBookingFlow" duration-ms="14467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateServiceBookingPage -->
-        <test-method is-config="true" signature="tearDownExp()[pri:0, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-09T23:53:08 IST" name="tearDownExp" finished-at="2026-02-09T23:53:16 IST" duration-ms="8040" status="PASS">
+        <test-method is-config="true" signature="tearDownExp()[pri:0, instance:tests.ServiceTests@6127a7e]" started-at="2026-02-10T10:40:45 IST" name="tearDownExp" finished-at="2026-02-10T10:40:55 IST" duration-ms="9271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownExp -->
