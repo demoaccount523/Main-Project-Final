@@ -118,7 +118,6 @@ public class ServicePage
             wait.until(ExpectedConditions.numberOfWindowsToBe(oldWindows.size() + 1));
 
             String current = driver.getWindowHandle();
-            //driver.close();
             for (String w : driver.getWindowHandles()) {
                 if (!w.equals(current)) {
                     driver.switchTo().window(w);
@@ -155,7 +154,6 @@ public class ServicePage
             Assert.fail();
             e.printStackTrace();
             // Capture screenshot of the empty results page
-           // ScreenshotUtils.capture(driver, testName + "_EmptyResultsBug");
         }
     }
 

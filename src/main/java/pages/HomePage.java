@@ -152,7 +152,8 @@ public class HomePage {
         return limit;
     }
 
-    private static void waitForCountToStabilize(WebDriver driver, By by, Duration timeout) {
+    private static void waitForCountToStabilize(WebDriver driver, By by, Duration timeout) 
+    {
         long end = System.currentTimeMillis() + timeout.toMillis();
         int lastCount = -1;
         int stableTicks = 0;
@@ -168,33 +169,29 @@ public class HomePage {
             lastCount = count;
         }
     }
-
-    private static void clearAndType(WebDriver driver, WebElement input, String value) 
-    {
+    
+    private static void clearAndType(WebDriver driver, WebElement input, String value) {
         try {
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", input);
-            input.click();
-            String selectAll = System.getProperty("os.name").toLowerCase().contains("mac")
-                    ? Keys.chord(Keys.COMMAND, "a")
-                    : Keys.chord(Keys.CONTROL, "a");
+            // Scroll and focus
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].scrollIntoView({block:'center'});", input);
 
-            input.sendKeys(selectAll);
+            input.click();
+
+            // Select all and clear
+            input.sendKeys(Keys.chord(Keys.CONTROL, "a"));
             input.sendKeys(Keys.DELETE);
 
-            String current = input.getAttribute("value");
-            if (current != null && !current.isEmpty()) {
-                ((JavascriptExecutor) driver).executeScript(
-                        "arguments[0].value=''; arguments[0].dispatchEvent(new Event('input',{bubbles:true}));", input);
-            }
+            // Type new value
             input.sendKeys(value);
+
         } catch (Exception e) {
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].value=arguments[1]; arguments[0].dispatchEvent(new Event('input',{bubbles:true}));",
-                    input, value
-            );
+           
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].value = arguments[1];", input, value);
         }
     }
-    
+     
     // Logic for HomePage.java - You can keep this as a helper, but it's now called inside printTop5Listings
     public void captureStaysToExcel() 
     {

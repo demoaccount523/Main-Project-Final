@@ -72,7 +72,7 @@ public class DriverFactory
         } 
         catch (Exception e) 
         {
-            System.err.println("Driver initialization failed: " + e.getMessage());
+            System.out.println("Driver initialization failed: " + e.getMessage());
         }
 
         if (driver != null) 
