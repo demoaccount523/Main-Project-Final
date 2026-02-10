@@ -58,7 +58,7 @@ public class ServiceTests extends BaseTest {
 
     }
 
-    @Test(priority=4)
+    @Test(priority=4,dependsOnMethods= {"TC11_validateServiceBookingFlow"})
     public void validateServiceBookingPage() throws InterruptedException {
         String testName = "validateServiceBookingPage";
         log.info("Step 5: Open random service and capture details");
@@ -68,7 +68,8 @@ public class ServiceTests extends BaseTest {
     }
 
     @AfterClass
-    public void tearDownExp(){
+    public void tearDownExp()
+    {
         tearDown();
     }
 }

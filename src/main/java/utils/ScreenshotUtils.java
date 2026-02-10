@@ -1,5 +1,6 @@
 package utils;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,25 +16,31 @@ import java.time.format.DateTimeFormatter;
 
 public class ScreenshotUtils {
 
-    public static String capture(WebDriver driver, String testName) {
+    public static String capture(WebDriver driver, String testName) 
+    {
         try {
-            //1. WAIT FOR PAGE TO BE FULLY LOADED BEFORE TAKING THE SHOT
+            // 1. WAIT FOR PAGE TO BE FULLY LOADED
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
             wait.until(d -> ((JavascriptExecutor) d)
                     .executeScript("return document.readyState").equals("complete"));
 
-            // 2. Proceed with capturing the screenshot
-            Files.createDirectories(Path.of("reports", "screenshots"));
-            String ts = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss_SSS"));
-            String fileName = testName + "_" + ts + ".png";
-            Path dest = Path.of("reports", "screenshots", fileName);
+            // 2. CREATE DIRECTORIES (Safety Step)
+            // Path.of ensures the folders "reports/screenshots" exist in your project root
+            Files.createDirectories(Path.of(System.getProperty("user.dir"), "reports", "screenshots"));
 
+            // 3. GENERATE FILENAME AND PATH
+            String ts = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy.MM.dd_HH.mm.ss_SSS"));
+            String destination = System.getProperty("user.dir") + "/reports/screenshots/" + testName + "_" + ts + ".png";
+
+            // 4. CAPTURE AND COPY
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(src.toPath(), dest);
+            FileUtils.copyFile(src, new File(destination));
             
-            return dest.toString();
-        } catch (Exception e) {
-            System.err.println("Failed to capture screenshot: " + e.getMessage());
+            return destination;
+        } 
+        catch (Exception e) 
+        {
+            System.out.println("Failed to capture screenshot: " + e.getMessage());
             return null;
         }
     }

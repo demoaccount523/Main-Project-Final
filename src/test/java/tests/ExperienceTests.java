@@ -15,9 +15,7 @@ public class ExperienceTests extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(ExperienceTests.class);
     public ExperiencePage experiencePage;
-    
-    //hello
-    
+        
     @Parameters({"browserName", "headless"})
     @BeforeClass
     public void setUpExp(@Optional("chrome") String browserFromXml, @Optional("false") String headless){
@@ -73,7 +71,8 @@ public class ExperienceTests extends BaseTest {
     }
 
     @AfterClass
-    public void tearDownExp(){
+    public void tearDownExp()
+    {
         tearDown();
     }
 }
